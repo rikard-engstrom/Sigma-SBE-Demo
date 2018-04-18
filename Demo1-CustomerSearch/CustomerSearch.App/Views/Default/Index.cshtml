@@ -1,0 +1,38 @@
+﻿@model CustomerSearch.App.Models.SearchViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <form id="search-bar" class="form-inline mt-5 text-center w-75 mx-auto" method="get">
+        <input class="form-control w-75"
+               type="text"
+               name="searchPhrase"
+               placeholder="Search for customer by entering family name"
+               value="@Model.SearchPhrase" />
+        <button class="btn btn-md ml-1" type="submit">Search</button>
+    </form>
+</div>
+
+@if (Model.Customers.Any())
+{
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Family name</th>
+                <th>Given name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <tr>
+                    <td>@customer.FamilyName</td>
+                    <td>@customer.GivenName</td>
+                    <td>@customer.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

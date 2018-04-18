@@ -1,0 +1,72 @@
+﻿@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic&subset=latin,latin-ext");
+
+html {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    min-height: 100%;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position-y: 16px;
+    background-position-x: 20px;
+    background-size: 110px 20px;
+    background-color: #ff9d00;
+    height: 50px;
+    color:#fff;
+}
+
+    header a {
+        color: #fff;
+    }
+
+.icon-left {
+    float: left;
+}
+
+footer {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 25px 40px 17px 30px;
+    font-size: 14px;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.footer-logo {
+    margin-left: 12px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 60px;
+}
+
+body .bg-success {
+    background-color: #cfc !important;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search-bar .btn {
+    background-color: #ff9d00;
+    color:#fff;
+}
